@@ -7,6 +7,8 @@ type AboutSectionProps = {
   personalNotes: string[];
   photoUrl?: string;
   photoAlt?: string;
+  secondaryPhotoUrl?: string;
+  secondaryPhotoAlt?: string;
 };
 
 export function AboutSection({
@@ -14,8 +16,10 @@ export function AboutSection({
   personalNotes,
   photoUrl,
   photoAlt,
+  secondaryPhotoUrl,
+  secondaryPhotoAlt,
 }: AboutSectionProps) {
-  const hasPhoto = Boolean(photoUrl);
+  const hasPhoto = Boolean(photoUrl || secondaryPhotoUrl);
 
   return (
     <section id="about" className="relative pb-16 pt-12 sm:pb-20 sm:pt-14">
@@ -53,12 +57,33 @@ export function AboutSection({
 
           {photoUrl ? (
             <AnimatedReveal delay={0.1}>
-              <div className="border-t border-white/10 pt-5">
+              <div className="space-y-4 border-t border-white/10 pt-5">
                 <div className="overflow-hidden rounded-[1.5rem] border border-white/10">
                   <img
                     src={photoUrl}
                     alt={photoAlt ?? "John Judge"}
                     className="aspect-[4/3] w-full object-cover object-center"
+                  />
+                </div>
+                {secondaryPhotoUrl ? (
+                  <div className="overflow-hidden rounded-[1.5rem] border border-white/10">
+                    <img
+                      src={secondaryPhotoUrl}
+                      alt={secondaryPhotoAlt ?? "John Judge"}
+                      className="aspect-[4/5] w-full object-cover object-center"
+                    />
+                  </div>
+                ) : null}
+              </div>
+            </AnimatedReveal>
+          ) : secondaryPhotoUrl ? (
+            <AnimatedReveal delay={0.1}>
+              <div className="border-t border-white/10 pt-5">
+                <div className="overflow-hidden rounded-[1.5rem] border border-white/10">
+                  <img
+                    src={secondaryPhotoUrl}
+                    alt={secondaryPhotoAlt ?? "John Judge"}
+                    className="aspect-[4/5] w-full object-cover object-center"
                   />
                 </div>
               </div>

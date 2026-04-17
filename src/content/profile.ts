@@ -16,6 +16,8 @@ export const profile: Profile = {
   photoAlt: "John Judge with Apollo and Finn outdoors",
   aboutPhotoUrl: "/john-judge-and-wife.jpeg",
   aboutPhotoAlt: "John Judge with his wife overlooking the ocean",
+  aboutSecondaryPhotoUrl: "/john-judge-swimming.jpeg",
+  aboutSecondaryPhotoAlt: "John Judge swimming near a rocky coastline",
 };
 
 export const heroStats = [

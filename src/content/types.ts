@@ -12,6 +12,8 @@ export type Profile = {
   photoAlt?: string;
   aboutPhotoUrl?: string;
   aboutPhotoAlt?: string;
+  aboutSecondaryPhotoUrl?: string;
+  aboutSecondaryPhotoAlt?: string;
 };
 
 export type ExperienceItem = {

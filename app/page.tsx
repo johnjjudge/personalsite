@@ -32,6 +32,8 @@ export default function HomePage() {
         personalNotes={personalNotes}
         photoUrl={profile.aboutPhotoUrl}
         photoAlt={profile.aboutPhotoAlt}
+        secondaryPhotoUrl={profile.aboutSecondaryPhotoUrl}
+        secondaryPhotoAlt={profile.aboutSecondaryPhotoAlt}
       />
       <ExperienceSection items={experienceItems} />
       <EducationSection items={educationItems} />
