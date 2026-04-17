@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#050814"/>
+      <stop offset="1" stop-color="#122348"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.18" r="0.7">
+      <stop offset="0" stop-color="#5d92ff" stop-opacity=".42"/>
+      <stop offset=".65" stop-color="#5d92ff" stop-opacity=".04"/>
+      <stop offset="1" stop-color="#5d92ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g fill="none" opacity=".12" stroke="#f8fbff">
+    <path d="M0 110h1200M0 210h1200M0 310h1200M0 410h1200M0 510h1200"/>
+    <path d="M140 0v630M300 0v630M460 0v630M620 0v630M780 0v630M940 0v630M1100 0v630"/>
+  </g>
+  <rect x="96" y="88" width="1008" height="454" rx="34" fill="#091022" fill-opacity=".66" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="152" y="210" fill="#9bbcff" font-family="Avenir Next, Segoe UI, sans-serif" font-size="24" letter-spacing="8">SOFTWARE ENGINEER</text>
+  <text x="152" y="314" fill="#f4f7ff" font-family="Avenir Next, Segoe UI, sans-serif" font-size="84" font-weight="700">John Judge</text>
+  <text x="152" y="394" fill="#c7d2e7" font-family="Avenir Next, Segoe UI, sans-serif" font-size="30">
+    Premium personal site with placeholder content and a polished single-page build.
+  </text>
+  <rect x="152" y="450" width="232" height="58" rx="29" fill="#5d92ff"/>
+  <text x="209" y="487" fill="#050814" font-family="Avenir Next, Segoe UI, sans-serif" font-size="20" font-weight="700">View Resume</text>
+</svg>
