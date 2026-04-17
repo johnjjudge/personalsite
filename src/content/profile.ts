@@ -45,7 +45,7 @@ export const aboutHighlights = [
 
 export const personalNotes = [
   "I live in the Seattle area with my wife and our two dogs, Apollo, a Samoyed, and Finn, an American Eskimo mix. We are also getting ready to welcome our first child.",
-  "Outside of work I spend a lot of time learning and improving cooking techniques, skiing, building side projects, and helping keep a top-ranked Sporcle pub quiz team organized. I have a real knack for remembering random facts. Probably because I spend a lot of free time watching video essays on YouTube. I am originally from New York. I spend far too much time worrying about the NY Jets, Mets, and Rangers. I love the NFL and can spend hours talking (and criticizing) the New York Jets.",
+  "Outside of work I spend a lot of time learning and improving cooking techniques, skiing, building side projects, and helping keep a top-ranked Sporcle pub quiz team organized. I have a real knack for remembering random facts. Probably because I spend a lot of free time watching video essays on YouTube. I am originally from New York. I spend far too much time worrying about the NY Jets, Mets, and Rangers. I love the NFL and can spend hours talking about (and criticizing) the New York Jets.",
 ];
 
 export const philosophyPoints = [
