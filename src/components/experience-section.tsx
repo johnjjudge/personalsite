@@ -10,8 +10,8 @@ type ExperienceSectionProps = {
 
 export function ExperienceSection({ items }: ExperienceSectionProps) {
   return (
-    <section id="experience" className="py-20 sm:py-24">
-      <Container className="space-y-12">
+    <section id="experience" className="py-16 sm:py-20">
+      <Container className="space-y-10">
         <AnimatedReveal>
           <SectionHeader
             eyebrow="Experience"

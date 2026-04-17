@@ -2,7 +2,7 @@ import type { Profile } from "@/content/types";
 
 export const profile: Profile = {
   name: "John Judge",
-  title: "Software Engineer II at Microsoft",
+  title: "Software Engineer at Microsoft",
   tagline:
     "Software engineer focused on cloud-backed platform work, security, and service reliability for the Windows driver ecosystem.",
   summary:

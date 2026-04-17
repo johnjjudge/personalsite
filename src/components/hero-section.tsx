@@ -11,14 +11,14 @@ type HeroSectionProps = {
 
 export function HeroSection({ profile }: HeroSectionProps) {
   return (
-    <section id="hero" className="relative overflow-hidden pb-16 pt-28 sm:pb-20 sm:pt-32 lg:pb-24 lg:pt-36">
+    <section id="hero" className="relative overflow-hidden pb-8 pt-24 sm:pb-10 sm:pt-28 lg:pb-12 lg:pt-32">
       <BackgroundSpotlight />
       <Container className="relative z-10">
-        <AnimatedReveal className="max-w-4xl space-y-6">
+        <AnimatedReveal className="max-w-4xl space-y-5">
           <div className="inline-flex items-center rounded-full border border-blue-200/15 bg-blue-200/10 px-4 py-2 text-xs uppercase tracking-[0.3em] text-blue-100/90">
             {profile.title}
           </div>
-          <div className="space-y-5">
+          <div className="space-y-4">
             <h1 className="max-w-3xl font-display text-5xl font-semibold tracking-[-0.04em] text-white sm:text-6xl lg:text-7xl">
               {profile.name}
             </h1>

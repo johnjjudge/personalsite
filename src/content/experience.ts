@@ -3,7 +3,7 @@ import type { ExperienceItem } from "@/content/types";
 export const experienceItems: ExperienceItem[] = [
   {
     company: "Microsoft",
-    role: "Software Engineer II",
+    role: "",
     start: "Mar 2022",
     end: "Present",
     location: "Redmond, Washington",

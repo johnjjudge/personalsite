@@ -15,9 +15,11 @@ export function AboutSection({
   photoUrl,
   photoAlt,
 }: AboutSectionProps) {
+  const hasPhoto = Boolean(photoUrl);
+
   return (
-    <section id="about" className="relative py-20 sm:py-24">
-      <Container className="space-y-12">
+    <section id="about" className="relative pb-16 pt-12 sm:pb-20 sm:pt-14">
+      <Container className="space-y-8 sm:space-y-10">
         <AnimatedReveal>
           <SectionHeader
             eyebrow="About"
@@ -26,28 +28,21 @@ export function AboutSection({
           />
         </AnimatedReveal>
 
-        <div className="grid gap-6 lg:grid-cols-[1fr_1.05fr]">
+        <div className={hasPhoto ? "grid gap-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(320px,0.95fr)] lg:gap-10" : ""}>
           <AnimatedReveal delay={0.08}>
-            <div className="space-y-5 border-t border-white/10 pt-6">
-              <p className="font-display text-2xl font-semibold text-white">Professional</p>
-              <div className="space-y-4 text-base leading-7 text-slate-300">
-                {highlights.map((item) => (
-                  <p key={item}>{item}</p>
-                ))}
-              </div>
-            </div>
-          </AnimatedReveal>
-
-          <AnimatedReveal delay={0.1}>
-            <div className="space-y-5 border-t border-white/10 pt-6">
-              {photoUrl ? (
-                <div className="overflow-hidden rounded-[1.5rem] border border-white/10">
-                  <img src={photoUrl} alt={photoAlt ?? "John Judge"} className="h-72 w-full object-cover" />
+            <div className="space-y-8 border-t border-white/10 pt-5">
+              <div className="space-y-4">
+                <p className="font-display text-2xl font-semibold text-white">Professional</p>
+                <div className="space-y-4 text-base leading-7 text-slate-300">
+                  {highlights.map((item) => (
+                    <p key={item}>{item}</p>
+                  ))}
                 </div>
-              ) : null}
-              <div className="space-y-3">
+              </div>
+
+              <div className="space-y-4">
                 <p className="font-display text-2xl font-semibold text-white">Personal</p>
-                <div className="space-y-3 text-base leading-7 text-slate-300">
+                <div className="space-y-4 text-base leading-7 text-slate-300">
                   {personalNotes.map((note) => (
                     <p key={note}>{note}</p>
                   ))}
@@ -55,6 +50,20 @@ export function AboutSection({
               </div>
             </div>
           </AnimatedReveal>
+
+          {photoUrl ? (
+            <AnimatedReveal delay={0.1}>
+              <div className="border-t border-white/10 pt-5">
+                <div className="overflow-hidden rounded-[1.5rem] border border-white/10">
+                  <img
+                    src={photoUrl}
+                    alt={photoAlt ?? "John Judge"}
+                    className="aspect-[4/3] w-full object-cover object-center"
+                  />
+                </div>
+              </div>
+            </AnimatedReveal>
+          ) : null}
         </div>
       </Container>
     </section>
