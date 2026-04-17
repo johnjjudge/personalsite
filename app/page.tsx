@@ -1,4 +1,4 @@
-import { aboutHighlights, heroStats, personalNotes, personalTags, philosophyPoints, profile } from "@/content/profile";
+import { aboutHighlights, personalNotes, profile } from "@/content/profile";
 import { experienceItems } from "@/content/experience";
 import { projects } from "@/content/projects";
 import { educationItems, resumeHighlights, resumeNotes } from "@/content/resume";
@@ -24,12 +24,10 @@ export default function HomePage() {
   return (
     <main className="relative overflow-hidden">
       <Navbar navItems={navItems} resumeUrl={profile.resumeUrl} />
-      <HeroSection profile={profile} heroStats={heroStats} />
+      <HeroSection profile={profile} />
       <AboutSection
         highlights={aboutHighlights}
-        philosophyPoints={philosophyPoints}
         personalNotes={personalNotes}
-        personalTags={personalTags}
         photoUrl={profile.photoUrl}
         photoAlt={profile.photoAlt}
       />

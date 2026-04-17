@@ -16,18 +16,14 @@ export function ProjectsSection({ items }: ProjectsSectionProps) {
         <AnimatedReveal>
           <SectionHeader
             eyebrow="Projects"
-            title="Selected projects across cloud systems, analytics, and embedded control work."
-            description="Some cool things I have worked on."
+            title="Projects"
+            description="A few things I have built."
           />
         </AnimatedReveal>
 
-        <div className="grid gap-6 xl:grid-cols-3">
+        <div className="grid gap-8 lg:grid-cols-2">
           {items.map((item, index) => (
-            <AnimatedReveal
-              key={item.slug}
-              delay={0.08 + index * 0.06}
-              className={item.featured ? "xl:col-span-2" : undefined}
-            >
+            <AnimatedReveal key={item.slug} delay={0.08 + index * 0.06} className="border-t border-white/10 pt-6">
               <ProjectCard item={item} />
             </AnimatedReveal>
           ))}

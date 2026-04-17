@@ -8,7 +8,6 @@ export type Profile = {
   githubUrl: string;
   linkedinUrl?: string;
   resumeUrl: string;
-  skillChips: string[];
   photoUrl?: string;
   photoAlt?: string;
 };

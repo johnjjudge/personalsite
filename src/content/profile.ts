@@ -6,7 +6,7 @@ export const profile: Profile = {
   tagline:
     "Software engineer focused on cloud-backed platform work, security, and service reliability for the Windows driver ecosystem.",
   summary:
-    "With seven years of post-grad experience, I specialize in software engineering and cloud-based solutions at Microsoft. My work focuses on improving security, scalability, and usability across the Windows driver ecosystem that supports approximately 1.4 billion active devices.",
+    "I build secure, scalable cloud-backed systems at Microsoft, with a focus on improving the Windows driver ecosystem used across approximately 1.4 billion active devices.",
   location: "Seattle area",
   email: "judgejohn17@gmail.com",
   githubUrl: "https://github.com/johnjjudge",
@@ -35,18 +35,14 @@ export const heroStats = [
 ];
 
 export const aboutHighlights = [
-  "I specialize in software engineering and cloud-based solutions at Microsoft, with a focus on improving the Windows driver ecosystem through secure, scalable, and highly usable platform work.",
-  "At Hardware Dev Center, I have helped design and implement Azure-backed services for driver validation, certification, scanning, and publishing while improving pipeline stability, service performance, and security posture.",
-  "I thrive in collaborative environments where technical depth and operational discipline matter, turning complex engineering problems into durable systems that serve users and partners at meaningful scale.",
+  "At Microsoft I work on Azure-backed services and workflows that support driver validation, certification, signing, publishing, and security across the Windows ecosystem.",
+  "My work tends to sit at the intersection of platform engineering, operational reliability, and practical systems design, with an emphasis on shipping durable solutions that scale cleanly.",
 ];
 
 export const personalNotes = [
   "I live in the Seattle area with my wife and our two dogs, Apollo, a Samoyed, and Finn, an American Eskimo mix. We are also getting ready to welcome our first child.",
-  "Outside of work I spend a lot of time cooking, skiing, and building side projects that I care about for their own sake.",
-  "I have a real knack for memorizing fun facts. I am the captain of a top ranked Sporcle Pub Quiz trivia team.",
-  "I grew up in the NY metro area and spend far too much time worrying about the NY Jets, Mets, and Rangers"
+  "I am originally from the New York metro area. Outside of work I enjoy cooking, skiing, side projects, and helping keep a top-ranked Sporcle pub quiz team organized.",
 ];
-
 
 export const philosophyPoints = [
   {
