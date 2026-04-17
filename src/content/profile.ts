@@ -14,6 +14,8 @@ export const profile: Profile = {
   resumeUrl: "/JohnJudge.pdf",
   photoUrl: "/john-judge-with-apollo-and-finn.jpeg",
   photoAlt: "John Judge with Apollo and Finn outdoors",
+  aboutPhotoUrl: "/john-judge-and-wife.jpeg",
+  aboutPhotoAlt: "John Judge with his wife overlooking the ocean",
 };
 
 export const heroStats = [

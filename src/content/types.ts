@@ -10,6 +10,8 @@ export type Profile = {
   resumeUrl: string;
   photoUrl?: string;
   photoAlt?: string;
+  aboutPhotoUrl?: string;
+  aboutPhotoAlt?: string;
 };
 
 export type ExperienceItem = {

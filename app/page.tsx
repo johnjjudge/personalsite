@@ -5,6 +5,7 @@ import { educationItems, resumeHighlights, resumeNotes } from "@/content/resume"
 import { socialLinks } from "@/content/socials";
 import { AboutSection } from "@/components/about-section";
 import { ContactSection } from "@/components/contact-section";
+import { EducationSection } from "@/components/education-section";
 import { ExperienceSection } from "@/components/experience-section";
 import { Footer } from "@/components/footer";
 import { HeroSection } from "@/components/hero-section";
@@ -15,6 +16,7 @@ import { ResumeSection } from "@/components/resume-section";
 const navItems = [
   { label: "About", href: "#about", id: "about" },
   { label: "Experience", href: "#experience", id: "experience" },
+  { label: "Education", href: "#education", id: "education" },
   { label: "Projects", href: "#projects", id: "projects" },
   { label: "Resume", href: "#resume", id: "resume" },
   { label: "Contact", href: "#contact", id: "contact" },
@@ -28,16 +30,15 @@ export default function HomePage() {
       <AboutSection
         highlights={aboutHighlights}
         personalNotes={personalNotes}
-        photoUrl={profile.photoUrl}
-        photoAlt={profile.photoAlt}
+        photoUrl={profile.aboutPhotoUrl}
+        photoAlt={profile.aboutPhotoAlt}
       />
       <ExperienceSection items={experienceItems} />
+      <EducationSection items={educationItems} />
       <ProjectsSection items={projects} />
       <ResumeSection
         resumeUrl={profile.resumeUrl}
-        githubUrl={profile.githubUrl}
         highlights={resumeHighlights}
-        education={educationItems}
         notes={resumeNotes}
       />
       <ContactSection socialLinks={socialLinks} email={profile.email} githubUrl={profile.githubUrl} />

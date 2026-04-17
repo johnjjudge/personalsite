@@ -3,8 +3,8 @@ import type { ExperienceItem } from "@/content/types";
 export const experienceItems: ExperienceItem[] = [
   {
     company: "Microsoft",
-    role: "",
-    start: "Mar 2022",
+    role: "Software Engineer",
+    start: "Jun 2019",
     end: "Present",
     location: "Redmond, Washington",
     bullets: [
@@ -14,15 +14,6 @@ export const experienceItems: ExperienceItem[] = [
       "Led operational excellence work by improving monitoring and SLO coverage, tuning noisy alerts, mitigating production issues, and documenting playbooks that shortened time-to-mitigation and reduced repeat incidents.",
       "Architected and delivered an Azure-hosted synthetic end-to-end availability testing solution adopted across 5+ production services to validate critical workflows and catch regressions before customers do.",
       "Helped raise engineering standards through Scrum Master support, engineering excellence guidance, hackathon leadership, technical workshops, and onboarding and mentorship for 8+ engineers.",
-    ],
-  },
-  {
-    company: "Microsoft",
-    role: "Software Engineer",
-    start: "Jun 2019",
-    end: "Mar 2022",
-    location: "Redmond, Washington",
-    bullets: [
       "Planned and executed zero-downtime operating system upgrades across the team's VM fleet in every environment, including production, balancing development and cloud-cost tradeoffs and completing the rollout within one sprint without service interruption.",
       "Partnered with engineering, security, and legal stakeholders to close a critical EV certificate validation gap by gathering requirements and implementing the validation algorithm used to harden identity verification in the signing workflow.",
       "Designed and shipped a new Azure-hosted REST API microservice handling tens of thousands of requests per day, with production telemetry and operational readiness built in from the start.",

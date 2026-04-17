@@ -6,28 +6,21 @@ import { SectionHeader } from "@/components/section-header";
 
 type ResumeSectionProps = {
   resumeUrl: string;
-  githubUrl: string;
   highlights: Array<{
     title: string;
     body: string;
   }>;
-  education: Array<{
-    school: string;
-    credential: string;
-    years?: string;
-    location?: string;
-  }>;
   notes: string[];
 };
 
-export function ResumeSection({ resumeUrl, githubUrl, highlights, education, notes }: ResumeSectionProps) {
+export function ResumeSection({ resumeUrl, highlights, notes }: ResumeSectionProps) {
   return (
     <section id="resume" className="py-16 sm:py-20">
       <Container className="space-y-10">
         <AnimatedReveal>
           <SectionHeader
             eyebrow="Resume"
-            title="Resume and education"
+            title="Resume"
             description="Highlights here, full PDF linked below."
           />
         </AnimatedReveal>
@@ -42,22 +35,6 @@ export function ResumeSection({ resumeUrl, githubUrl, highlights, education, not
                     <div key={item.title} className="space-y-1">
                       <p className="font-display text-xl font-semibold text-white">{item.title}</p>
                       <p className="text-sm leading-7 text-slate-300">{item.body}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="space-y-4">
-                <p className="font-display text-2xl font-semibold text-white">Education</p>
-                <div className="space-y-4">
-                  {education.map((item) => (
-                    <div key={item.school} className="space-y-1">
-                      <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
-                        <p className="font-display text-xl font-semibold text-white">{item.school}</p>
-                        {item.years ? <p className="text-sm text-slate-500">{item.years}</p> : null}
-                      </div>
-                      <p className="text-sm leading-7 text-slate-300">{item.credential}</p>
-                      {item.location ? <p className="text-sm text-slate-500">{item.location}</p> : null}
                     </div>
                   ))}
                 </div>

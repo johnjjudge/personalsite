@@ -34,25 +34,32 @@ export function Navbar({ navItems, resumeUrl }: NavbarProps) {
   }, []);
 
   useEffect(() => {
-    const sections = document.querySelectorAll<HTMLElement>("section[id]");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      {
-        rootMargin: "-30% 0px -50% 0px",
-        threshold: 0.1,
-      },
-    );
+    const sections = navItems
+      .map((item) => document.getElementById(item.id))
+      .filter((section): section is HTMLElement => Boolean(section));
 
-    sections.forEach((section) => observer.observe(section));
+    const updateActiveSection = () => {
+      const marker = window.scrollY + 140;
+      let currentSection = navItems[0]?.id ?? "about";
 
-    return () => observer.disconnect();
-  }, []);
+      sections.forEach((section) => {
+        if (marker >= section.offsetTop) {
+          currentSection = section.id;
+        }
+      });
+
+      setActiveSection(currentSection);
+    };
+
+    updateActiveSection();
+    window.addEventListener("scroll", updateActiveSection, { passive: true });
+    window.addEventListener("resize", updateActiveSection);
+
+    return () => {
+      window.removeEventListener("scroll", updateActiveSection);
+      window.removeEventListener("resize", updateActiveSection);
+    };
+  }, [navItems]);
 
   return (
     <>
@@ -75,6 +82,7 @@ export function Navbar({ navItems, resumeUrl }: NavbarProps) {
                 <a
                   key={item.id}
                   href={item.href}
+                  onClick={() => setActiveSection(item.id)}
                   className={cn(
                     "rounded-full px-4 py-2 text-sm transition duration-200",
                     activeSection === item.id
@@ -130,7 +138,10 @@ export function Navbar({ navItems, resumeUrl }: NavbarProps) {
                       ? "bg-white/10 text-white"
                       : "text-slate-300 hover:bg-white/[0.04] hover:text-white",
                   )}
-                  onClick={() => setMenuOpen(false)}
+                  onClick={() => {
+                    setActiveSection(item.id);
+                    setMenuOpen(false);
+                  }}
                 >
                   {item.label}
                 </a>
@@ -145,4 +156,3 @@ export function Navbar({ navItems, resumeUrl }: NavbarProps) {
     </>
   );
 }
-
