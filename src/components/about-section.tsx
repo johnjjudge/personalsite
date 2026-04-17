@@ -16,7 +16,7 @@ export function AboutSection({
   photoAlt,
 }: AboutSectionProps) {
   return (
-    <section id="about" className="relative py-24 sm:py-28">
+    <section id="about" className="relative py-20 sm:py-24">
       <Container className="space-y-12">
         <AnimatedReveal>
           <SectionHeader

@@ -22,7 +22,7 @@ type ResumeSectionProps = {
 
 export function ResumeSection({ resumeUrl, githubUrl, highlights, education, notes }: ResumeSectionProps) {
   return (
-    <section id="resume" className="py-24 sm:py-28">
+    <section id="resume" className="py-20 sm:py-24">
       <Container className="space-y-12">
         <AnimatedReveal>
           <SectionHeader

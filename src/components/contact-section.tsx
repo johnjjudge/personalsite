@@ -14,7 +14,7 @@ type ContactSectionProps = {
 
 export function ContactSection({ socialLinks, email, githubUrl }: ContactSectionProps) {
   return (
-    <section id="contact" className="py-24 sm:py-28">
+    <section id="contact" className="py-20 sm:py-24">
       <Container className="space-y-12">
         <AnimatedReveal>
           <SectionHeader

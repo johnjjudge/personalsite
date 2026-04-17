@@ -11,7 +11,7 @@ type HeroSectionProps = {
 
 export function HeroSection({ profile }: HeroSectionProps) {
   return (
-    <section id="hero" className="relative flex min-h-screen items-center overflow-hidden pb-24 pt-32 sm:pt-36">
+    <section id="hero" className="relative overflow-hidden pb-16 pt-28 sm:pb-20 sm:pt-32 lg:pb-24 lg:pt-36">
       <BackgroundSpotlight />
       <Container className="relative z-10">
         <AnimatedReveal className="max-w-4xl space-y-6">

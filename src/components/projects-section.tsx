@@ -11,7 +11,7 @@ type ProjectsSectionProps = {
 
 export function ProjectsSection({ items }: ProjectsSectionProps) {
   return (
-    <section id="projects" className="py-24 sm:py-28">
+    <section id="projects" className="py-20 sm:py-24">
       <Container className="space-y-12">
         <AnimatedReveal>
           <SectionHeader
@@ -23,7 +23,15 @@ export function ProjectsSection({ items }: ProjectsSectionProps) {
 
         <div className="grid gap-8 lg:grid-cols-2">
           {items.map((item, index) => (
-            <AnimatedReveal key={item.slug} delay={0.08 + index * 0.06} className="border-t border-white/10 pt-6">
+            <AnimatedReveal
+              key={item.slug}
+              delay={0.08 + index * 0.06}
+              className={
+                items.length % 2 === 1 && index === items.length - 1
+                  ? "border-t border-white/10 pt-6 lg:col-span-2"
+                  : "border-t border-white/10 pt-6"
+              }
+            >
               <ProjectCard item={item} />
             </AnimatedReveal>
           ))}
