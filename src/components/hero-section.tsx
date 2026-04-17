@@ -19,11 +19,11 @@ type HeroSectionProps = {
 };
 
 const chipPositions = [
-  "left-0 top-10",
-  "right-0 top-8",
-  "left-6 bottom-28",
-  "right-8 bottom-24",
-  "left-1/2 top-full -translate-x-1/2 -translate-y-1/2",
+  "-left-10 top-12 xl:-left-16 xl:top-16",
+  "right-2 -top-3 xl:-right-8 xl:top-6",
+  "-left-14 bottom-32 xl:-left-20 xl:bottom-36",
+  "right-2 bottom-28 xl:-right-10 xl:bottom-32",
+  "left-1/2 -bottom-5 -translate-x-1/2 xl:-bottom-7",
 ];
 
 export function HeroSection({ profile, heroStats }: HeroSectionProps) {
@@ -107,18 +107,19 @@ export function HeroSection({ profile, heroStats }: HeroSectionProps) {
               </div>
             </GlowCard>
 
-            {profile.skillChips.map((chip, index) => (
-              <FloatingSkillChip
-                key={chip}
-                label={chip}
-                index={index}
-                className={`absolute ${chipPositions[index] ?? "left-10 top-10"}`}
-              />
-            ))}
+            <div aria-hidden className="pointer-events-none absolute inset-0 z-10">
+              {profile.skillChips.map((chip, index) => (
+                <FloatingSkillChip
+                  key={chip}
+                  label={chip}
+                  index={index}
+                  className={`absolute ${chipPositions[index] ?? "left-10 top-10"}`}
+                />
+              ))}
+            </div>
           </AnimatedReveal>
         </div>
       </Container>
     </section>
   );
 }
-

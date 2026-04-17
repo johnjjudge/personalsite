@@ -14,7 +14,7 @@ export function FloatingSkillChip({ label, className, index }: FloatingSkillChip
   return (
     <motion.div
       className={cn(
-        "rounded-full border border-white/12 bg-white/[0.05] px-4 py-2 text-xs font-medium tracking-[0.18em] text-blue-100 backdrop-blur-md",
+        "whitespace-nowrap rounded-full border border-white/12 bg-white/[0.05] px-4 py-2 text-xs font-medium tracking-[0.18em] text-blue-100 backdrop-blur-md",
         className,
       )}
       animate={{
@@ -31,4 +31,3 @@ export function FloatingSkillChip({ label, className, index }: FloatingSkillChip
     </motion.div>
   );
 }
-
