@@ -20,13 +20,13 @@ export function ContactSection({ socialLinks, email, githubUrl }: ContactSection
           <SectionHeader
             eyebrow="Contact"
             title="Connect"
-            description="Email, LinkedIn, GitHub, and resume."
+            description="Email, LinkedIn, and GitHub"
           />
         </AnimatedReveal>
 
         <AnimatedReveal delay={0.08} className="space-y-6 border-t border-white/10 pt-6">
           <p className="max-w-2xl text-base leading-7 text-slate-300">
-            Always open to connecting, especially around engineering work, interesting systems problems, or opportunities
+            Always open to connecting, especially around engineering work, interesting problems, or opportunities
             to collaborate.
           </p>
           <div className="flex flex-wrap gap-3">

@@ -23,7 +23,7 @@ export function AboutSection({
         <AnimatedReveal>
           <SectionHeader
             eyebrow="About"
-            title="Overview and a bit about me."
+            title="A bit about me."
             description="A short professional summary and some personal context."
           />
         </AnimatedReveal>

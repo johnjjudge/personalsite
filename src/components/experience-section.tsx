@@ -15,7 +15,7 @@ export function ExperienceSection({ items }: ExperienceSectionProps) {
         <AnimatedReveal>
           <SectionHeader
             eyebrow="Experience"
-            title="Experience"
+            title="Proffesional Experience"
             description="Roles and selected impact."
           />
         </AnimatedReveal>

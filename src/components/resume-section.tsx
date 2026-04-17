@@ -70,7 +70,7 @@ export function ResumeSection({ resumeUrl, githubUrl, highlights, education, not
               <div className="space-y-3">
                 <p className="font-display text-2xl font-semibold text-white">Resume</p>
                 <p className="text-sm leading-7 text-slate-300">
-                  The current PDF is bundled with the site and linked directly below.
+                  My current resume is viewable on the site or available for download directly below.
                 </p>
               </div>
 
@@ -80,9 +80,6 @@ export function ResumeSection({ resumeUrl, githubUrl, highlights, education, not
                 </PrimaryButton>
                 <SecondaryButton href={resumeUrl} download>
                   Download PDF
-                </SecondaryButton>
-                <SecondaryButton href={githubUrl} target="_blank" rel="noreferrer">
-                  View GitHub
                 </SecondaryButton>
               </div>
 

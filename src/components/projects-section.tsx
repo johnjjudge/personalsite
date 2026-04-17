@@ -16,8 +16,8 @@ export function ProjectsSection({ items }: ProjectsSectionProps) {
         <AnimatedReveal>
           <SectionHeader
             eyebrow="Projects"
-            title="Projects"
-            description="A few things I have built."
+            title="Side Projects"
+            description="A few cool things I have built."
           />
         </AnimatedReveal>
 
