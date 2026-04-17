@@ -9,6 +9,8 @@ export type Profile = {
   linkedinUrl?: string;
   resumeUrl: string;
   skillChips: string[];
+  photoUrl?: string;
+  photoAlt?: string;
 };
 
 export type ExperienceItem = {
@@ -23,6 +25,7 @@ export type ExperienceItem = {
 export type ProjectItem = {
   slug: string;
   title: string;
+  period?: string;
   description: string;
   techStack: string[];
   githubUrl?: string;
@@ -35,4 +38,3 @@ export type SocialLink = {
   url: string;
   icon?: string;
 };
-

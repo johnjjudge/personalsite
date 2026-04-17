@@ -16,8 +16,8 @@ export function ProjectsSection({ items }: ProjectsSectionProps) {
         <AnimatedReveal>
           <SectionHeader
             eyebrow="Projects"
-            title="Proof of work is already structured for real case studies."
-            description="Each card supports description, stack, GitHub, and future live links, with one featured slot for the strongest project story."
+            title="Selected projects across cloud systems, analytics, and embedded control work."
+            description="This section mixes production-style reference architectures, open source analysis tooling, and hands-on systems engineering work to show both depth and range."
           />
         </AnimatedReveal>
 
@@ -36,4 +36,3 @@ export function ProjectsSection({ items }: ProjectsSectionProps) {
     </section>
   );
 }
-

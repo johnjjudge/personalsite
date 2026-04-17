@@ -38,7 +38,7 @@ export function HeroSection({ profile, heroStats }: HeroSectionProps) {
                 Software Engineer
               </div>
               <div className="space-y-5">
-                <p className="text-sm uppercase tracking-[0.24em] text-slate-400">Premium personal site in progress</p>
+                <p className="text-sm uppercase tracking-[0.24em] text-slate-400">Microsoft • Cloud Systems • Platform Engineering</p>
                 <h1 className="max-w-3xl font-display text-5xl font-semibold tracking-[-0.04em] text-white sm:text-6xl lg:text-7xl">
                   {profile.name}
                 </h1>
@@ -74,13 +74,10 @@ export function HeroSection({ profile, heroStats }: HeroSectionProps) {
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(93,146,255,0.18),transparent_32%)]" />
               <div className="absolute inset-x-6 top-6 h-px bg-gradient-to-r from-transparent via-blue-200/60 to-transparent" />
               <div className="relative space-y-6">
-                <div className="flex items-start justify-between gap-6">
+                <div className="space-y-2">
                   <div className="space-y-2">
                     <p className="text-xs uppercase tracking-[0.28em] text-slate-400">Signal Board</p>
-                    <h2 className="font-display text-2xl font-semibold text-white">Placeholder profile snapshot</h2>
-                  </div>
-                  <div className="rounded-full border border-emerald-400/25 bg-emerald-400/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.24em] text-emerald-200">
-                    Available
+                    <h2 className="font-display text-2xl font-semibold text-white">Engineering profile snapshot</h2>
                   </div>
                 </div>
 
@@ -98,10 +95,10 @@ export function HeroSection({ profile, heroStats }: HeroSectionProps) {
                 </div>
 
                 <div className="rounded-[1.75rem] border border-blue-200/15 bg-blue-200/5 p-5">
-                  <p className="text-xs uppercase tracking-[0.24em] text-blue-100/70">Implementation note</p>
+                  <p className="text-xs uppercase tracking-[0.24em] text-blue-100/70">What I optimize for</p>
                   <p className="mt-3 text-sm leading-6 text-slate-300">
-                    Content is intentionally placeholder-first. The structure, motion, and styling are ready for a final
-                    profile, project, and resume content pass.
+                    Secure services, reliable operations, and practical systems design that scale cleanly across real user
+                    workflows and partner-facing platform surfaces.
                   </p>
                 </div>
               </div>

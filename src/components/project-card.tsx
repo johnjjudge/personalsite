@@ -28,6 +28,9 @@ export function ProjectCard({ item }: ProjectCardProps) {
           </div>
           <div className="space-y-3">
             <h3 className="font-display text-2xl font-semibold text-white">{item.title}</h3>
+            {item.period ? (
+              <p className="text-xs uppercase tracking-[0.2em] text-slate-500">{item.period}</p>
+            ) : null}
             <p className="text-sm leading-7 text-slate-300">{item.description}</p>
           </div>
         </div>
@@ -59,4 +62,3 @@ export function ProjectCard({ item }: ProjectCardProps) {
     </GlowCard>
   );
 }
-

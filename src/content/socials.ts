@@ -7,14 +7,18 @@ export const socialLinks: SocialLink[] = [
     icon: "GH",
   },
   {
+    label: "LinkedIn",
+    url: "https://www.linkedin.com/in/johnj-judge/",
+    icon: "in",
+  },
+  {
     label: "Email",
-    url: "mailto:hello@johnjudge.me",
+    url: "mailto:judgejohn17@gmail.com",
     icon: "@",
   },
   {
     label: "Resume",
-    url: "/resume-placeholder.pdf",
+    url: "/JohnJudge.pdf",
     icon: "CV",
   },
 ];
-

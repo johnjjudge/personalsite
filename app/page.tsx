@@ -1,7 +1,7 @@
-import { aboutHighlights, heroStats, philosophyPoints, profile } from "@/content/profile";
+import { aboutHighlights, heroStats, personalNotes, personalTags, philosophyPoints, profile } from "@/content/profile";
 import { experienceItems } from "@/content/experience";
 import { projects } from "@/content/projects";
-import { resumeHighlights, resumeNotes } from "@/content/resume";
+import { educationItems, resumeHighlights, resumeNotes } from "@/content/resume";
 import { socialLinks } from "@/content/socials";
 import { AboutSection } from "@/components/about-section";
 import { ContactSection } from "@/components/contact-section";
@@ -25,13 +25,21 @@ export default function HomePage() {
     <main className="relative overflow-hidden">
       <Navbar navItems={navItems} resumeUrl={profile.resumeUrl} />
       <HeroSection profile={profile} heroStats={heroStats} />
-      <AboutSection highlights={aboutHighlights} philosophyPoints={philosophyPoints} />
+      <AboutSection
+        highlights={aboutHighlights}
+        philosophyPoints={philosophyPoints}
+        personalNotes={personalNotes}
+        personalTags={personalTags}
+        photoUrl={profile.photoUrl}
+        photoAlt={profile.photoAlt}
+      />
       <ExperienceSection items={experienceItems} />
       <ProjectsSection items={projects} />
       <ResumeSection
         resumeUrl={profile.resumeUrl}
         githubUrl={profile.githubUrl}
         highlights={resumeHighlights}
+        education={educationItems}
         notes={resumeNotes}
       />
       <ContactSection socialLinks={socialLinks} email={profile.email} githubUrl={profile.githubUrl} />
@@ -39,4 +47,3 @@ export default function HomePage() {
     </main>
   );
 }
-

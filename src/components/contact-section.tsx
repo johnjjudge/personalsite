@@ -19,8 +19,8 @@ export function ContactSection({ socialLinks, email, githubUrl }: ContactSection
         <AnimatedReveal>
           <SectionHeader
             eyebrow="Contact"
-            title="Keep the last section simple, visible, and one click away."
-            description="v1 uses direct links instead of a workflow-heavy form, which keeps the site lightweight while still covering the recruiter and collaborator use case."
+            title="Always open to connecting."
+            description="The site keeps contact simple: direct links to email, GitHub, LinkedIn, and the current resume without adding a workflow-heavy form."
           />
         </AnimatedReveal>
 
@@ -28,10 +28,10 @@ export function ContactSection({ socialLinks, email, githubUrl }: ContactSection
           <AnimatedReveal delay={0.08}>
             <GlowCard className="h-full p-8">
               <div className="space-y-6">
-                <p className="font-display text-3xl font-semibold text-white">Placeholder outreach prompt</p>
+                <p className="font-display text-3xl font-semibold text-white">Always open to connecting.</p>
                 <p className="text-base leading-7 text-slate-300">
-                  Replace this copy with the final availability note, preferred contact method, and a short invitation for
-                  recruiters, collaborators, or peers to reach out.
+                  If you are hiring, building, or working through a hard platform problem, feel free to reach out. Email,
+                  GitHub, LinkedIn, and the latest resume are all one click away.
                 </p>
                 <div className="flex flex-wrap gap-3">
                   {email ? <PrimaryButton href={`mailto:${email}`}>Email John</PrimaryButton> : null}
@@ -43,7 +43,7 @@ export function ContactSection({ socialLinks, email, githubUrl }: ContactSection
             </GlowCard>
           </AnimatedReveal>
 
-          <div className="grid gap-4 sm:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
             {socialLinks.map((link, index) => (
               <AnimatedReveal key={link.label} delay={0.12 + index * 0.05}>
                 <GlowCard className="h-full p-6">
@@ -67,4 +67,3 @@ export function ContactSection({ socialLinks, email, githubUrl }: ContactSection
     </section>
   );
 }
-

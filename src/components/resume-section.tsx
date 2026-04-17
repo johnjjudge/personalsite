@@ -12,18 +12,24 @@ type ResumeSectionProps = {
     title: string;
     body: string;
   }>;
+  education: Array<{
+    school: string;
+    credential: string;
+    years?: string;
+    location?: string;
+  }>;
   notes: string[];
 };
 
-export function ResumeSection({ resumeUrl, githubUrl, highlights, notes }: ResumeSectionProps) {
+export function ResumeSection({ resumeUrl, githubUrl, highlights, education, notes }: ResumeSectionProps) {
   return (
     <section id="resume" className="py-24 sm:py-28">
       <Container className="space-y-12">
         <AnimatedReveal>
           <SectionHeader
             eyebrow="Resume"
-            title="The delivery path is ready before the final PDF lands."
-            description="This section exposes both view and download actions, while the on-page summary gives enough signal for visitors who stay on the page."
+            title="Resume highlights and the current PDF, in one place."
+            description="The page summary gives a fast read on strengths and scope, while the linked PDF provides the full detail for hiring managers and recruiters."
           />
         </AnimatedReveal>
 
@@ -33,7 +39,7 @@ export function ResumeSection({ resumeUrl, githubUrl, highlights, notes }: Resum
               <div className="space-y-8">
                 <div className="space-y-3">
                   <p className="text-xs uppercase tracking-[0.28em] text-blue-200/70">Resume Summary</p>
-                  <h3 className="font-display text-3xl font-semibold text-white">Placeholder highlights on the page.</h3>
+                  <h3 className="font-display text-3xl font-semibold text-white">Core strengths at a glance.</h3>
                 </div>
 
                 <div className="space-y-5">
@@ -43,6 +49,31 @@ export function ResumeSection({ resumeUrl, githubUrl, highlights, notes }: Resum
                       <p className="mt-2 text-sm leading-7 text-slate-300">{item.body}</p>
                     </div>
                   ))}
+                </div>
+
+                <div className="space-y-4">
+                  <div className="space-y-2">
+                    <p className="text-xs uppercase tracking-[0.28em] text-blue-200/70">Education</p>
+                    <p className="text-sm leading-7 text-slate-300">
+                      Formal academic background that underpins the engineering work shown throughout the site.
+                    </p>
+                  </div>
+                  <div className="grid gap-4">
+                    {education.map((item) => (
+                      <div key={item.school} className="rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-5">
+                        <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+                          <div>
+                            <p className="font-display text-xl font-semibold text-white">{item.school}</p>
+                            <p className="mt-1 text-sm leading-7 text-slate-300">{item.credential}</p>
+                          </div>
+                          {item.years ? (
+                            <p className="text-sm uppercase tracking-[0.18em] text-slate-500">{item.years}</p>
+                          ) : null}
+                        </div>
+                        {item.location ? <p className="mt-2 text-sm text-slate-400">{item.location}</p> : null}
+                      </div>
+                    ))}
+                  </div>
                 </div>
 
                 <div className="flex flex-wrap gap-3">
@@ -74,9 +105,9 @@ export function ResumeSection({ resumeUrl, githubUrl, highlights, notes }: Resum
                       </div>
                     </div>
                     <div className="rounded-[1.35rem] border border-dashed border-blue-200/18 bg-[linear-gradient(180deg,rgba(93,146,255,0.1),rgba(255,255,255,0.02))] p-6">
-                      <p className="font-display text-2xl font-semibold text-white">resume-placeholder.pdf</p>
+                      <p className="font-display text-2xl font-semibold text-white">JohnJudge.pdf</p>
                       <p className="mt-3 text-sm leading-7 text-slate-300">
-                        A static placeholder PDF is already included in `public/`, so deployment and CTA wiring are ready for the final export.
+                        The current resume PDF is bundled with the site, so view and download actions map directly to the same document recruiters receive.
                       </p>
                     </div>
                   </div>
@@ -98,4 +129,3 @@ export function ResumeSection({ resumeUrl, githubUrl, highlights, notes }: Resum
     </section>
   );
 }
-
