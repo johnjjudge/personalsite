@@ -6,32 +6,31 @@ export const profile: Profile = {
   tagline:
     "Software engineer focused on cloud-backed platform work, security, and service reliability for the Windows driver ecosystem.",
   summary:
-    "With over six years of professional experience, I specialize in software engineering and cloud-based solutions at Microsoft. My work centers on improving security, scalability, and usability across the Windows driver ecosystem that supports approximately 1.4 billion active devices.",
+    "With seven years of post-grad experience, I specialize in software engineering and cloud-based solutions at Microsoft. My work focuses on improving security, scalability, and usability across the Windows driver ecosystem that supports approximately 1.4 billion active devices.",
   location: "Seattle area",
   email: "judgejohn17@gmail.com",
   githubUrl: "https://github.com/johnjjudge",
   linkedinUrl: "https://www.linkedin.com/in/johnj-judge/",
   resumeUrl: "/JohnJudge.pdf",
-  skillChips: ["Azure", "C#", "Python", "Distributed Systems", "Security"],
   photoUrl: "/john-judge-with-apollo-and-finn.jpeg",
   photoAlt: "John Judge with Apollo and Finn outdoors",
 };
 
 export const heroStats = [
   {
-    label: "Current Focus",
-    value: "Windows driver ecosystem",
+    label: "Current Work",
+    value: "Microsoft's Hardware Dev Center",
     detail: "Designing and shipping secure, scalable workflow and platform features inside Microsoft's Hardware Dev Center.",
   },
   {
-    label: "Impact Surface",
+    label: "Impact",
     value: "~1.4B active devices",
     detail: "Building services and certification flows that influence stability, usability, and trust for hardware partners at global scale.",
   },
   {
     label: "Core Stack",
-    value: "Azure, C#, Python",
-    detail: "Event-driven services, security-sensitive workflows, and production systems engineered for reliability and operational clarity.",
+    value: "Azure, C#, TypeScript, Python",
+    detail: "I mostly work with this stack, however, I am always learning new things",
   },
 ];
 
@@ -43,22 +42,11 @@ export const aboutHighlights = [
 
 export const personalNotes = [
   "I live in the Seattle area with my wife and our two dogs, Apollo, a Samoyed, and Finn, an American Eskimo mix. We are also getting ready to welcome our first child.",
-  "I grew up in the New York metro area, and outside of work I spend a lot of time cooking, skiing, and building side projects that I care about for their own sake.",
-  "I am also the unofficial, team-nominated organizer of a top-ranked Sporcle pub quiz team, which is probably the clearest possible sign that I enjoy collaborative problem solving even when it is entirely unnecessary.",
+  "Outside of work I spend a lot of time cooking, skiing, and building side projects that I care about for their own sake.",
+  "I have a real knack for memorizing fun facts. I am the captain of a top ranked Sporcle Pub Quiz trivia team.",
+  "I grew up in the NY metro area and spend far too much time worrying about the NY Jets, Mets, and Rangers"
 ];
 
-export const personalTags = [
-  "Seattle Area",
-  "New York Metro Roots",
-  "Married",
-  "Soon-To-Be Father",
-  "Apollo",
-  "Finn",
-  "Cooking",
-  "Skiing",
-  "Side Projects",
-  "Pub Quiz",
-];
 
 export const philosophyPoints = [
   {

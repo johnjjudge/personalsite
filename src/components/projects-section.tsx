@@ -17,7 +17,7 @@ export function ProjectsSection({ items }: ProjectsSectionProps) {
           <SectionHeader
             eyebrow="Projects"
             title="Selected projects across cloud systems, analytics, and embedded control work."
-            description="This section mixes production-style reference architectures, open source analysis tooling, and hands-on systems engineering work to show both depth and range."
+            description="Some cool things I have worked on."
           />
         </AnimatedReveal>
 

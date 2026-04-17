@@ -6,7 +6,7 @@ export const experienceItems: ExperienceItem[] = [
     role: "Software Engineer II",
     start: "Mar 2022",
     end: "Present",
-    location: "Redmond, Washington · Hybrid",
+    location: "Redmond, Washington",
     bullets: [
       "Designed and delivered features across driver certification, signing, and publishing workflows that support the Windows driver ecosystem used by roughly 1.4 billion active Windows devices, improving stability, usability, and security for hardware partners.",
       "Co-designed and shipped an Azure event-driven, domain-driven service to rescan Windows Update-published drivers; processed 250,000+ drivers and surfaced hundreds of suspicious drivers for deeper security investigation.",

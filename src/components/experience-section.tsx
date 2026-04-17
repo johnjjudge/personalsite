@@ -16,7 +16,7 @@ export function ExperienceSection({ items }: ExperienceSectionProps) {
         <AnimatedReveal>
           <SectionHeader
             eyebrow="Experience"
-            title="Impact should read clearly, even before the final copy pass."
+            title="11 years of delivering and counting"
             description="The timeline is tuned for concise, impact-oriented bullets so real role content can drop in without structural rework."
           />
         </AnimatedReveal>

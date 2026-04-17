@@ -29,7 +29,4 @@ export const educationItems = [
 ];
 
 export const resumeNotes = [
-  "The resume section now points at the real PDF exported from the current resume file.",
-  "View and download entry points are exposed from both the hero and the resume section.",
-  "Project cards now cover cloud architecture, open source analysis tooling, and systems engineering work.",
 ];
