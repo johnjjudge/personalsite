@@ -28,4 +28,12 @@ export const projects: ProjectItem[] = [
       "Led control systems engineering on a multidisciplinary team building a tested, functional, and reusable hybrid rocket engine for use in the 2020 IREC. Owned RTM monitoring system design and implementation, with work spanning high-frequency sensor reading, analog-to-digital conversion, high-speed data acquisition, and printed circuit board design.",
     techStack: ["Control Systems", "Sensor Telemetry", "Data Acquisition", "PCB Design"],
   },
+  {
+    slug: "interface-digital-electronics-nxp-cup",
+    title: "Interface & Digital Electronics NXP Cup",
+    period: "Spring 2017",
+    description:
+      "Developed an autonomous car for competition at Imagine RIT 2017. Designed and built both the hardware and software needed to capture and process sensor data, then implemented an autonomous driving algorithm based on those signals.",
+    techStack: ["Embedded Systems", "Digital Electronics", "Sensor Processing", "Autonomous Driving"],
+  },
 ];
